@@ -1,0 +1,86 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #d4d4d4;
+    height: 100vh;
+}
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.tomain{
+    margin: 20px;
+    text-decoration: none;
+    color: red;
+}
+
+.order{
+    margin: 20px;
+    padding: 10px;
+    background-color: #fdfcfc;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+.buyer{
+    padding: 7px;
+    margin: 10px;
+    height: 100px;
+    max-width: 190px;
+}
+
+input{
+    width: 180px;
+    height: 20px;    
+}
+.btn-pay{
+    margin: 5px 0;
+}
+.product{
+    margin: 10px;
+}
+.frame{
+    margin: 10px;
+}
+.card{
+    background-color: rgb(180, 237, 245);
+}
+.card_date{
+    display: inline;
+    width: 60px;
+    margin: 4px 0;
+}
+.info{
+    margin: 20px;
+    padding: 10px;
+    background-color: #fdfcfc;
+    font-size: large;
+}
+.msg{
+    margin: 0;
+}
+@media(max-width:765px){
+    .order{
+        margin: 20px;
+        padding: 10px;
+        background-color: #fdfcfc;
+        height: 300px;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:300px){
+    .order{
+        margin: 5px;
+        padding: 0px;
+        background-color: #fdfcfc;
+        height: 300px;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+    }
+}

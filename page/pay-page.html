@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/order-style.css">
+</head>
+
+<body>
+    <div>
+        <form class="buyer" method="POST" action="../src/pay.php">
+            <div class="buyer__name">
+                <label for="full_name">Введите имя</label><br>
+                <label for="full_name">(На английском)</label>
+                <input type="text" name="full_name" id="full_name">
+            </div>
+            <div class="buyer__phone">
+                <label for="phone">Введите телефон</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div class="card">
+                <div class="">
+                    <label for="card_id">Введите карту</label>
+                    <input type="text" name="card_id" id="card_id">
+                </div>
+                <div class="">
+                    <label for="card_user">Держатель карты</label>
+                    <input type="text" name="card_user" autocomplete="off" id="card_user">
+                </div>
+                <div class="">
+                    <label for="card_date">Дата</label>
+                    <input class="card_date" type="text" name="card_month" id="card_date" pattern="[0-9]{2}">
+                    <input class="card_date" type="text" name="card_year" id="card_date" pattern="[0-9]{2}">
+                </div>
+                <div class="">
+                    <label for="card_cvv">CVV</label>
+                    <input class="card_date" type="text" name="card_cvv" id="card_cvv" pattern="[0-9]{3}">
+                </div>
+            </div>
+
+            <button type="submit" class="btn-pay">Заказать</button>
+        </form>
+    </div>
+</body>
+
+</html>
